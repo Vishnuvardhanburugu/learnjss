@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling</title>
+</head>
+<body>
+  <input type="text" id="userInput" placeholder="Type something..." />
+  <button id="displayButton">Display</button>
+  <p id="displayText"></p>
+
+  <script>
+    document.getElementById('displayButton').addEventListener('click', function() {
+      const input = document.getElementById('userInput').value;
+      document.getElementById('displayText').textContent = input;
+    });
+  </script>
+</body>
+</html>
